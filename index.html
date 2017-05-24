@@ -1,0 +1,32 @@
+<html>
+	<title>SPA</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.angularjs.org/1.4.0/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
+	<script type="text/javascript" src="controllers/rightSideController.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="controllers/addCustomer.js"></script>
+	<script type="text/javascript" src="services/customerData.js"></script>
+	<script type="text/javascript" src="directives/addCustomer.js"></script>
+	<script type="text/javascript" src="directives/addNewButton.js"></script>
+	<script type="text/javascript" src="directives/leftSide.js"></script>
+	<script type="text/javascript" src="directives/rightSide.js"></script>
+	
+	<!-- <script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="app.js"></script> -->
+	<body ng-app="customerApp">
+		<section>
+			<!-- <add-customer></add-customer> -->
+			<add-new-button></add-new-button>
+			<search-customer></search-customer>
+			<hr>
+			<left-side class="leftSide"></left-side>
+			<div ng-view class="rightSide"></div>
+			<div class="clearfix"></div>
+		</section>
+	</body>
+</html>
